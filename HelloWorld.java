@@ -12,7 +12,7 @@ public class HelloWorld {
     }
 
 	private String world() {
-        return "World";
+        return "World!";
     }
 
 
