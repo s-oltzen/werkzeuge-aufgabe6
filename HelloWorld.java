@@ -1,10 +1,14 @@
 public class HelloWorld {
     public static void main (String[] args) {
-        new HelloWorld();
+        new HelloWorld(args);
     }
 
-	public HelloWorld() {
-        System.out.println(this.hello() + " " + this.world() + "!");
+	public HelloWorld(String[] args) {
+		if(args.length == 1) {
+			System.out.println(this.hello() + " " + args [0] + "!");
+		} else {
+			System.out.println(this.hello() + " " + this.world() + "!");
+		}
     }
 
 	private String hello() {
