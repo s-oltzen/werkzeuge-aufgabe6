@@ -4,7 +4,16 @@ public class HelloWorld {
     }
 
 	public HelloWorld() {
-        System.out.println("Hello World!");
+        System.out.println(this.hello() + " " + this.world() + "!");
     }
+
+	private String hello() {
+        return "Hello";
+    }
+
+	private String world() {
+        return "World";
+    }
+
 
 }
